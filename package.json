@@ -1,6 +1,6 @@
 {
   "name": "100yards",
-  "https":"aman1625.github.io/realestateapp/",
+  "homepage": "https://aman1625.github.io/realestateapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

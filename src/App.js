@@ -3,7 +3,7 @@ import './App.css';
 import ReactDOM from "react-dom";
 import Map from './components/map/'
 import KeyFeatures from './keyFeatures/'
-import Home from './components/Home';
+
 import Navigation from'./Navigation';
 import Register from './Register';
 import Searchbox from './components/Searchbox';
