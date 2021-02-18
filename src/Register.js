@@ -61,10 +61,15 @@ class Register extends React.Component {
  }
 
   render() {
-     return (
-		<article className= "br3 ba dark-gray bg-light-gray b--black-10 mv4 w-150 w-50-m w-25-l mw6 nt6 shadow-5 center">
+     return ( 
+      <div style={{ 
+      backgroundImage: `url("https://images.unsplash.com/photo-1560448204-444f743ef6e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" )` 
+    ,  backgroundSize: 'cover',
+            overflow: 'hidden',}} className="pt">
+                    <p className="f3 fw4 hover-white no-underline near-black pa4 "  >Fill the query form below or call us at 8060797403</p> 
+		<article className= "br3 ba dark-gray bg-light-gray b--black-10 pa3 ma2 bw2 mv4 w-150 w-50-m w-25-l mw6 nt4 shadow-5 center pt4 flex flex-wrap">
 		<article className="pa4 black-80">
-  <div action="sign-up_submit" method="get" accept-charset="utf-8">
+  <div action="sign-up_submit" method="get" accept-charset="utf-8 flex flex-wrap">
     <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
       <legend className="ph0 mh0 fw6 f1"> We'll get in touch with you </legend>
        <div className="mt3">
@@ -119,7 +124,7 @@ class Register extends React.Component {
     
   </div>
 </article>
-</article>
+</article> </div>
 
         );
   }

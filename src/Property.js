@@ -11,19 +11,19 @@ import Facecard from './components/Facecard';
 import Facecardsec from './components/Facecardsec';
 import Fcard from './components/Fcard';
 import CardList from './CardList';
-import Imagegallery from './Imagegallery';
+import Card from './Card';
 import About from './About';
 
 
 
 
-class App extends Component {
+class Property extends Component {
   constructor(){
     super()
     this.state ={
       robots: [],
       route: 'home',
-      searchfield: '--'
+      searchfield: 'm'
     }
   }
 
@@ -68,11 +68,8 @@ class App extends Component {
     <div className="App">
       { this.state.route === 'home'
       ? <div>
-     
-      <Searchbox onRouteChange={this.onRouteChange} searchChange={this.onSearchChange}/>
-             
+
       <CardList robots ={filteredRobots}  />
-      <Imagegallery />
       <Facecard />
       <Facecardsec />
       <Fcard />
@@ -84,7 +81,6 @@ class App extends Component {
        : ( this.state.route ==='signout'
        ? <div> <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
        <Register onRouteChange={this.onRouteChange}/>
-  
        <Facecard />
       <Facecardsec />
       <Fcard />
@@ -100,4 +96,4 @@ class App extends Component {
   )
 }
 }
-export default App;
+export default Property;

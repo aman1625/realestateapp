@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from '@reach/router'
+import logo from './logo.png'
 
-const Card =({location , bedroom , budget , details})=>{
+const Card =({location , bedroom , budget , details , id})=>{
 	return (
        <div className='bg-white dib br3 pa3 ma2  bw2 shadow-5  '>
        <div className=" ma1 pa1 br22 shadow-1 mt1 br2 ">
-          <img alt='site' src={`https://en.pimg.jp/028/695/480/1/28695480.jpg`}/>
+          <img alt='site' src={logo}/>
           </div>
           <div> <div className="dt w-100 mt1">
           <div className="dtc">
@@ -17,6 +19,9 @@ const Card =({location , bedroom , budget , details})=>{
           </div>
           <p className='f6 lh-copy measure mt2 mid-gray'>{details}  </p>
           </div>
+          <Link className="btn btn-primary" to={`Card`}>
+            Go to property
+          </Link>
 
        </div>
 

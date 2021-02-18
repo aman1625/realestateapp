@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Map from './components/map/'
-import { Router } from '@reach/router'
-import 'tachyons'
+import Map from './components/map/';
+import { Router } from '@reach/router';
+import 'tachyons';
+import Property from './Property'
+
 
 
 
 ReactDOM.render(
+	
   <React.StrictMode>
-  <App />
+  <Router>
+  <App default />
+  <Property path="Card" />
+  </Router>,
   </React.StrictMode>,
   document.getElementById('root')
 );
